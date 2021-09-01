@@ -39,12 +39,7 @@ bool wildcardMatch(string s, string p, int n,int m)
 
 
 
-    if (j == m)
-    {
-        return true;
-    }
-
-    return false;
+    return ((j==m)?true :false); 
 }
 
 int main()
