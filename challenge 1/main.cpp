@@ -55,34 +55,3 @@ int main()
 
    return 0 ;
 }
-/*
-bool wildcardMatch(string s, string p)
-{
-	bool table [s.size()+1] [p.size()+1];
-	memset(table,0,sizeof(table)) ;
-	table[0][0] = true;
-	for (int i = 1; i <= s.size(); i++)
-	{
-		for (int j = 1; j <= p.size(); j++)
-		{
-			if (s[i-1] == p[j-1] || p[j-1] == '?')
-				table[i][j] = table[i-1][j-1];
-			else if (p[j-1] == '*')
-				table[i][j] = table[i][j-1] || table[i-1][j];
-            else
-                table[i][j] = false ;
-		}
-	}
-
-	return table[s.size()][p.size()];
-}
-// Driver program to test above functions
-int main()
-{
-    string s , p ;
-    cin >> s >> p ;
-    bool m = wildcardMatch(s,p) ;
-    cout << m ;
-    return 0;
-}
-*/
